@@ -1,27 +1,32 @@
-# BootstrapPlusIcons
+# README
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+## Install & run
 
-## Development server
+```bash
+git clone https://github.com/miguel-coppiloto/angular-bootstrap-plus-icons.git
+cd angular-grid-responsive
+npm install
+ng serve --open
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![resize](media/images/resize.gif)
 
-## Code scaffolding
+### Some important commands
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Fresh install
 
-## Build
+```bash
+ng new angular-bootstrap-plus-icons
+cd angular-bootstrap-plus-icons
+npm install bootstrap bootstrap-icons
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+We need only the CSS, so edit `angular.json` an add in the node `projects > [name-project] > architect > build > options > style`
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+"styles": [
+  "node_modules/bootstrap/scss/bootstrap.scss",
+  "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+  "src/styles.scss"
+],
+```
