@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/miguel-coppiloto/angular-bootstrap-plus-icons.git
-cd angular-grid-responsive
+cd angular-bootstrap-plus-icon
 npm install
 ng serve --open
 ```
@@ -17,7 +17,7 @@ Fresh install
 
 ```bash
 ng new angular-bootstrap-plus-icons
-cd angular-bootstrap-plus-icons
+cd angular-bootstrap-plus-icon
 npm install bootstrap bootstrap-icons
 ```
 
@@ -30,3 +30,8 @@ We need only the CSS, so edit `angular.json` an add in the node `projects > [nam
   "src/styles.scss"
 ],
 ```
+
+### Documentation
+
+- Bootstrap: https://getbootstrap.com/docs/5.2/getting-started/introduction/
+- Bootstrap Icons: https://icons.getbootstrap.com
